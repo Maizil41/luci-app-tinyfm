@@ -55,6 +55,7 @@ jobs:
         run: |
           echo -e "\033[34m🔍 Updating SDK feeds \033[0m"
           cd sdk
+          ./scripts/feeds update -a
           ./scripts/feeds install -a
 
       - name: ⚙️ Configure & compile APK
